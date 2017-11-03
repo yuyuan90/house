@@ -15,7 +15,8 @@ header .navbar-default{
     background: -ms-linear-gradient(right, #0575E6, #021B79); 
     background: -o-linear-gradient(right, #0575E6, #021B79);
     background: linear-gradient(to right, #0575E6, #021B79);
-    border: none
+    border: none;
+    padding-top: 4px;
 }
 #container{
     width: 100%;
@@ -29,7 +30,12 @@ header .navbar-default{
     color: orange
 }
 .navbar-default .navbar-right li a{
-    color: white
+    color: white;
+    border-bottom: 4px solid transparent
+}
+.navbar-default .navbar-right li a:hover{
+    color: white;
+    border-bottom: 4px solid rgb(255,132,0)
 }
 #cover_container{
     width: 100%;
@@ -53,6 +59,7 @@ header .navbar-default{
 #veil div.row{
     width: 50%;
     height: 100%;
+    padding: 0 5px;
     text-align: left;
     background: rgba(5, 117, 230,.7);
     display: flex;
@@ -62,7 +69,7 @@ header .navbar-default{
 div#main_title{
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-    font-size: 44px;
+    font-size: 43px;
     font-size: 3.2vw;
     font-weight: bold;
     line-height: 1.6;
@@ -74,22 +81,22 @@ div#main_title p#sub_title{
     color: rgb(255,255,255);
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
     font-size: 20px;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-weight: 100;
     letter-spacing: 1px
 }
 div#main_title span.glow{
-    font-size: 54px;
-    font-size: 4vw;
+    font-size: 53px;
+    font-size: 3.8vw !important;
     color: rgb(255,132,0);
     text-shadow: 5px 1px 3px rgb(255,255,255);
 }
 @media only screen and (min-width: 1065px) {
 	div#main_title{
-		font-size: 44px;
+		font-size: 43px;
 	}
 	span#glow{
-		font-size:54px;
+		font-size:53px;
 	}
 	div#main_title p{
 		font-size:20px;
@@ -135,18 +142,21 @@ div#main_title span.glow{
     color: rgb(167,167,167);
     line-height: 1.6;
 }
-#about button{
-    margin-top: 25px;
+.button-container{
+    margin-top: 25px
+}
+#about a{
     border-radius: 20px;
-    padding: 5px 20px;
+    padding: 7px 20px;
     letter-spacing: 1px;
     border: 2px solid #005bea;
     color: #005bea
     
 }
-#about button:hover{
+#about a:hover{
     background: #005bea;
-    color: white
+    color: white;
+    text-decoration: none
 }
 #about div.row div.col-md-6:first-child{
     padding-bottom: 10px

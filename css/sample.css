@@ -369,7 +369,8 @@ box-shadow: -10px 10px 9px 0px #ccc;
 .pricing-module{
     border: 1px solid rgba(167,167,167,.2);
     padding: 30px 20px;
-    background:white
+    background:white;
+    height: 422px
 }
 .pricing-module h4{
     font-weight: bold;
@@ -378,10 +379,12 @@ box-shadow: -10px 10px 9px 0px #ccc;
 .pricing-module p.price{
     color: rgb(255,132,0);
     font-weight: bold;
-    font-size: 16px
+    font-size: 12px;
+    
 }
 .pricing-module p.description{
-    color: #ccc
+    color: #ccc;
+    text-align: left
 }
 
 #testimonial_container{
@@ -428,10 +431,10 @@ box-shadow: -10px 10px 9px 0px #ccc;
     text-align: center;
     line-height: 2;
     font-weight: bold;
-    color: rgb(66,79,111)
+    color: #ff8400
 }
 #testimonial div.quote-lower p:last-child{
-    color: rgb(66,79,111);
+    color: #ff8400;
     font-size: 12px
 }
 #testimonial img{
@@ -534,13 +537,8 @@ box-shadow: -10px 10px 9px 0px #ccc;
 #form_container img{
     width: 120px;
 }
-#map{
-    width: 100%;
-}
-#map img{
-    width: 100%;
-    height:auto;
-}
+
+
 .up-arrow{
     text-align: center;
 
@@ -549,6 +547,7 @@ box-shadow: -10px 10px 9px 0px #ccc;
     position: fixed;
     bottom: 90px;
     right: 25px;
+    z-index: 5;
     visibility: hidden;
 }
 #back-to-top span{
@@ -584,4 +583,28 @@ box-shadow: -10px 10px 9px 0px #ccc;
 #lower-footer a:hover{
     color: rgb(255,132,0);
     text-decoration: none
+}
+
+#map{
+    width: 100%;
+    height: 160px;
+}
+.BMap_cpyCtrl {  
+    display: none;  
+}   
+.anchorBL {  
+    display: none;  
+} 
+
+#myModal .modal-body{
+    padding: 50px 20px;
+    border-top: 3px solid #2963bd
+}
+#myModal .modal-body p{
+    font-size: 24px;
+    line-height: 2.5;
+    color: rgb(66,79,111)
+}
+#myModal .modal-body p span{
+    color: rgb(255,132,0)
 }

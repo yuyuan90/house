@@ -70,12 +70,13 @@ $(window).on('scroll', function(){
                 data: JSON.stringify(data),
                 dataType: 'json',
                 cache:false,
-                success: (res) => {
-                    alert('信息发送成功，我们会尽快与您联系！')
-                    $('.username,.userphone').val('')
+                success: function(response) {
+                    alert('信息发送成功，我们会尽快与您联系！');
+                    $('.username').val('');
+                    $('.userphone').val('')
                 },
-                error: (res) => {
-                    console.log(res.errorMessage)
+                error: function(response) {
+                    console.log(response.errorMessage)
                 }
             })
                  

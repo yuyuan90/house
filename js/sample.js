@@ -1,6 +1,14 @@
 $(document).ready(function(){
+  
+   //carousel
+    $('#carousel-example-generic').bind('slide.bs.carousel', function (e) {
+       var bro = $('.main_title_silent').siblings('.main_title');
+       $('.main_title_silent').removeClass('main_title_silent');
+       bro.addClass('main_title_silent');
+       
+    });
     
-
+    
        //smooth scroll
   $("header a").on('click', function(event){
       if (this.hash !== "") {

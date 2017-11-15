@@ -73,8 +73,8 @@ div.main_title{
     font-size: 3.2vw;
     font-weight: bold;
     line-height: 1.6;
-    padding: 0;
-    letter-spacing: 3px
+    padding: 0 0 0 10px;
+    letter-spacing: 3px;
 }
 div.main_title p.sub_title{
     margin-top: 20px;
@@ -249,13 +249,13 @@ video {
     text-align: center;
     position: relative;
     margin: 20px auto;
-    padding: 55px 0 0 0;
+    padding: 55px 5px 0;
     text-align: center;
 }
 
 #cases div.col-md-4{
-    padding-left: 8px;
-    padding-right: 8px
+    padding-left: 5px;
+    padding-right: 5px
 }
 #cases div.row:first-child div.col-md-4:first-child{
     height: 200px;
@@ -273,7 +273,7 @@ video {
     
 }
 #cases img.case_img{
-    width: 100%;
+    width: 98%;
     height: 200px;
 }
 #cases .thumbnail{
